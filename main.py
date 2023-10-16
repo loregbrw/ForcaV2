@@ -69,7 +69,7 @@ while True:
 
     if vidas == 0:
         print(f"A resposta era {word}\n")
-        None
+
     else:
         print(GREEN + "\nVOCÊ GANHOU!\n" + RESET)
 
