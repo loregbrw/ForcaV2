@@ -1,7 +1,6 @@
 # JOGO DA FORCA
 import random
 
-
 RED   = "\033[1;31m" 
 BOLD  = "\033[;1m"
 RESET = "\033[0;0m"
@@ -104,14 +103,3 @@ while True:
     except ValueError:
         print(RED + "RESPOSTA INVÁLIDA" + RESET + " o jogo parou\n")
         break
-
-
-        # while op != 0 and op != 1:
-        #     print(RED + "RESPOSTA INVÁLIDA" + RESET)
-        #     op = int(input("Você deseja continuar jogando? Digite 0 para sair, e 1 para continuar: "))
-        #     if op == 0:
-        #         break
-        #     if op == 1:
-        #         None
-        #     if op != 0 and op != 1:
-        #         None
