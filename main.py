@@ -1,4 +1,3 @@
-# JOGO DA FORCA
 import random
 
 RED   = "\033[1;31m" 
