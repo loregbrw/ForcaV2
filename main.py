@@ -73,15 +73,19 @@ while True:
     else:
         print(GREEN + "\nVOCÊ GANHOU!\n" + RESET)
 
-    try:
-        op = int(input("Você deseja continuar jogando? Digite 0 para sair, e 1 para continuar: "))
-        if op == 0:
-            break
-        if op == 1:
-            None
-        if op != 0 and op != 1:
-            print(RED + "RESPOSTA INVÁLIDA" + RESET + " o jogo parou\n")
-            break
-    except ValueError:
-        print(RED + "RESPOSTA INVÁLIDA" + RESET + " o jogo parou\n")
+    while True:
+        condition = 1
+        try:
+            op = int(input("Você deseja continuar jogando? Digite 0 para sair, e 1 para continuar: "))
+            if op == 0:
+                condition = 0
+                break
+            if op == 1:
+                break
+            if op != 0 and op != 1:
+                print(RED + "RESPOSTA INVÁLIDA\n" + RESET)
+        except ValueError:
+            print(RED + "RESPOSTA INVÁLIDA\n" + RESET)
+
+    if condition == 0:
         break
