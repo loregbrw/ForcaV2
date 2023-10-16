@@ -40,7 +40,13 @@ while True:
             print(*hidden, sep= ' ')
             break
 
-        if letter in word:
+        elif letter in fails or letter in hidden:
+            print(BLUE + f"\nVocê já tentou essa letra!" + RESET)
+            print("\n")
+            print(*hidden, sep= ' ')
+            print("\n")
+
+        elif letter in word:
             index = 0
             for i in word:
                 if i == letter:
@@ -49,6 +55,7 @@ while True:
             print("\n")
             print(*hidden, sep= ' ')
             print("\n")
+
 
         elif not letter in word:
             vidas -= 1
